@@ -4,9 +4,8 @@ print("*********************************")
 
 numero_secreto = 42
 total_tentativas = 3
-rodada = 1
 
-while rodada <= total_tentativas:
+for rodada in range(1, total_tentativas + 1):
     print(f"Tentativa {rodada} de {total_tentativas}")
     chute = input("Digite o seu numero: ")
 
@@ -25,8 +24,6 @@ while rodada <= total_tentativas:
             print("Você errou, o chute foi maior que o numero secreto!")
         elif menor:
             print("Voce errou, o chute foi menor que o numero secreto!")
-
-    rodada = rodada + 1
 
     print("Fim do jogo")
     print("*****************************")
